@@ -24,7 +24,7 @@
 <div class="container" my-3>
     <div class="container my-3 rounded p-3">
 
-        {% if alltodos|length == 0 %}
+        {% if allTodos|length == 0 %}
         <div class="alert alert-info" role="alert">
             no tasks yet, Add one!
         </div>
@@ -44,7 +44,7 @@
             </thead>
             
             <tbody>
-                {% for todo in alltodos %}
+                {% for todo in allTodos %}
                 <tr>
                     <th scope="row">{{loop.index}}</th>
                     <td>{{todo.title}}</td>

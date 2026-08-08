@@ -7,7 +7,7 @@ todos= [
 
 @app.route('/')
 def home():
-    return render_template('index.html', todos=todos)
+    return render_template('index.html', allTodos=todos)
 
 if __name__ == '__main__':
     app.run(debug=True)
