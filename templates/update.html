@@ -2,21 +2,21 @@
 {% block body %}
 
 <div class="container my-3">
-    <div class="container my-3 rounded p-3">
+    <div class="container2 my-3 rounded p-3">
         <h1> Update Task</h1>
-        <form>
+        <form action="/update/{{todo.sno}}" method="POST">
             <div class="mb-3">
                 <label for="Title" class="form-label">task title</label>
                 <input type="text" class="form-control" id="Title" >
-                
             </div>
             <div class="mb-3">
                 <label for="Description" class="form-label">task description</label>
                 <input type="text" class="form-control" name="Description">
             </div>
-            
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-        
     </div>
 </div>
+
+{% block body %}
+
