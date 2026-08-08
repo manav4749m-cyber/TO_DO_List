@@ -1,8 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
-
 app = Flask(__name__)
 todos= [
-    {'sno': 1,"title": "simple task","desc": "this is a simple task for todo list","status": "pending"}
+    {'sno': 1,"title": "simple task","desc": "this is a simple task for todo list","date_created": "08-08-2026","status": "pending"}
 ]
 
 
